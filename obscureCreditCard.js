@@ -1,3 +1,5 @@
+const { is } = require("@babel/types");
+
 // credit card function
 function obscureCreditCard(cardNumber) {
     // if (cardNumber.length > 16 || cardNumber.length < 12 && typeof cardNumber !== 'number') { // invalid length - only between 12 and 16
@@ -11,6 +13,9 @@ function obscureCreditCard(cardNumber) {
     if (typeof cardNumber !== 'number') { // invalid type - must be number
         return 'Invalid credit card, must be numbers';
     }
+    // if (isNaN(cardNumber)) { // isNaN is what I usually use, but a string of numbers passes this test
+    //     return 'Invalid Credit Card';
+    // }
 
     const strCardNumber = cardNumber.toString(); // convert number to string for length check and slicing
 
@@ -24,3 +29,12 @@ function obscureCreditCard(cardNumber) {
 }
 
 module.exports = { obscureCreditCard };
+
+/* 
+    references: -->
+
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+        https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/isNaN
+*/
