@@ -9,13 +9,13 @@ function obscureCreditCard(cardNumber) {
     //     return obscuredSection + lastFourDigits;
     // }
     if (typeof cardNumber !== 'number') { // invalid type - must be number
-        return 'Invalid Credit Card';
+        return 'Invalid credit card, must be numbers';
     }
 
     const strCardNumber = cardNumber.toString(); // convert number to string for length check and slicing
 
     if (strCardNumber.length > 16 || strCardNumber.length < 12) { // invalid length - only between 12 and 16
-        return 'Invalid Credit Card';
+        return 'Invalid credit card, must be between 12 and 16 digits';
     } else { // valid length - obscure all but last four digits
         const lastFourDigits = strCardNumber.slice(-4); // ex: 123456789012 -> 9012 - get last four digits
         const obscuredSection = '*'.repeat(strCardNumber.length - 4); // ex: 123456789012 -> ******** - create string of asterisks for all but last four digits
