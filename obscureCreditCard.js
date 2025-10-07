@@ -1,5 +1,3 @@
-const { is } = require("@babel/types");
-
 // credit card function
 function obscureCreditCard(cardNumber) {
     // if (cardNumber.length > 16 || cardNumber.length < 12 && typeof cardNumber !== 'number') { // invalid length - only between 12 and 16
