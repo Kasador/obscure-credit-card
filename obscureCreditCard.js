@@ -36,5 +36,5 @@ module.exports = { obscureCreditCard };
         https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
         https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
         https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
-        https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/isNaN
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
 */
