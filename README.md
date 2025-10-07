@@ -10,6 +10,7 @@ Install **Jest** to run unit tests.
 
 <img width="498" height="194" alt="Image" src="https://github.com/user-attachments/assets/77b647cb-2057-42d4-abae-a522f4d284dd" />
 
+
 ```js
 describe('Obscure Credit Card', () => { // last four digits
     test('obscures all but last four digits of credit card number', () => {
